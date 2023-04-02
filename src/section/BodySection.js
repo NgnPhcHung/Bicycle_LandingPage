@@ -48,7 +48,7 @@ const TextItem = styled.li`
 
   font-size: var(--fontxxl);
   font-weight: bold;
-
+  position: relative;
   cursor: pointer;
   
   transition: transform 0.2 ease;

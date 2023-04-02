@@ -24,7 +24,7 @@ const OrderSection = () => {
 
 
   return (
-    <Section className="panel">
+    <Section className="panel" id="end">
       <Title>Thank you!</Title>
     </Section>
   );
