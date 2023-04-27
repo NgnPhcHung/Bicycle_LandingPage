@@ -33,7 +33,7 @@ const Sections = () => {
         scrollTrigger: {
           trigger: slider.current,
           pin: true,
-          // scrub: 1,
+          scrub: true,
           snap: 1 / (panels.length - 1),
           end: () => "+=" + slider.current.offsetWidth
         }

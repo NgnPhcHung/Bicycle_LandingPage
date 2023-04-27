@@ -2,8 +2,6 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import Logo from "./Logo";
 import ghostImg from "../asset/ghost.png";
-import { useState } from "react";
-import gsap from "gsap";
 
 const Nav = styled.nav`
   width: 100%;
@@ -32,7 +30,7 @@ const Ghost = styled.img`
   left: 105%;
   transform: translate(-50%, -50%);
   mix-blend-mode: exclusion;
-  animation: ${ghostAnim} 10s ease-in-out infinite;
+  animation: ${ghostAnim} 10s ease infinite;
 
   width: var(--fontxxl);
   transform: scaleX(-1);
@@ -74,19 +72,6 @@ const Text = styled.p`
 `;
 
 const Navbar = () => {
-  const scrollTo = (id) => {
-    // let element = document.getElementById(id);
-    // element.scrollIntoView({
-    //   behavior: "smooth",
-    //   block: "start",
-    //   inline: "nearest",
-    // });
-    const element = document.getElementById(id);
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
   return (
     <Nav id="navbar">
       <Logo />

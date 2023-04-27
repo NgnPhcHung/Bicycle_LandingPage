@@ -14,7 +14,6 @@ import gsap from 'gsap'
 
 export function DesignBikeModel(props) {
   const { nodes, materials } = useGLTF('/model/mountain_bike.glb')
-  let camera = useThree(state => state.camera)
   let scene = useThree(state => state.scene)
 
   const bike = useRef(null)
